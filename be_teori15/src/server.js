@@ -13,7 +13,8 @@ const start = async () => {
       console.log(`Server berjalan di port ${PORT}`);
     });
   } catch (error) {
-    console.error("Gagal terhubung ke database:", error.message);
+    console.error("Gagal terhubung ke database");
+    console.error(error);
     process.exit(1);
   }
 };
